@@ -221,7 +221,7 @@ align-items: center;
            ws.onmessage = (event) => {
                let stockObject = JSON.parse(event.data);
                let price = parseFloat(stockObject.p*74).toFixed(2);
-               stockPriceElement.innerText = (81990/price).toFixed(2);
+               stockPriceElement.innerText = (225000/price).toFixed(2);
                stockPriceElement.style.color =  price > lastPrice ? 'green' : 'red';
                lastPrice = price;
            };
